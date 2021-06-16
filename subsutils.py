@@ -4,8 +4,7 @@ import pysubs2 as ps2
 import subprocess
 import json
 from random import randrange as rd
-#from uuencode2 import uuencode
-from uuencode_ocaml import uuencode
+from nativeuuencode import cuuencode as uuencode
 
 class MkvFile:
     def __init__(self, src):
